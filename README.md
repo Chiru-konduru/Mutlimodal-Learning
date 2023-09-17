@@ -2,24 +2,23 @@
 
 **Repository Overview:**
 
-This repository hosts the assets for our multi-model learning project focused on image captioning. We utilize both conventional vision-language models and an innovative combination of CLIP and GPT-2 to generate contextually relevant text descriptions from input images.
+This repository hosts code, datasets, and models developed for our image captioning project. The project's objective is to design, train, and evaluate deep learning models capable of generating accurate and contextually relevant text descriptions for input images.
 
-**Models Explored:**
-1. **Conventional Vision-Language Model (VLM)**: This employs VGG16, a convolutional neural network, for image feature extraction, while an LSTM network crafts word sequences that encapsulate the essence of the images.
-2. **CLIPCap Model**: Our advanced model that synergizes the CLIP (Contrastive Language-Image Pretraining) model with GPT-2 to produce captions. The inherent ability of CLIP to understand the association between text and images makes it exemplary for captioning tasks. Integrating GPT-2 ensures the generated captions are coherent and apt for the image context.
+Models Explored:
 
-### Detailed Project Summary:
+Conventional Vision-Language Model (VLM): This model uses VGG16 (a convolutional neural network) to extract image features and an LSTM network to generate word sequences that describe the images.
+CLIPCap Model: Our primary model that integrates the CLIP (Contrastive Language-Image Pretraining) model with GPT-2 for image captioning. CLIP learns to relate text and images, making it well-suited for captioning tasks. The GPT-2 integration ensures coherent and contextually appropriate captions based on image features detected by CLIP.
+Detailed Project Summary:
+Our project aims to develop and assess a deep learning model capable of generating meaningful text descriptions for given images. We explore both conventional architectures and an innovative design that integrates CLIP with GPT-2.
 
-Our multi-model learning venture is centered around designing and evaluating deep learning models that can articulate accurate descriptions for provided images. We have delved into conventional architectures and an avant-garde model that melds CLIP with GPT-2.
+Conventional VLMs are typically trained on datasets that pair text and images. They can perform various tasks like image captioning, visual question answering, and visual dialogue. In our project, the baseline model combines the VGG16 CNN with LSTM networks: VGG16 extracts image features, and the LSTM produces a sequence of words to depict the image.
 
-**Conventional VLMs** are typically primed on datasets consisting of text-image pairs. They are versatile, capable of performing an array of tasks including image captioning, visual question answering, and visual dialogue. For our foundational model, we chose a tandem of the VGG16 CNN and LSTM networks: the former extracts features from images and the latter converts these features into descriptive word sequences.
+Our primary model, CLIPCap, incorporates the CLIP model with GPT-2. CLIP's pretraining on associating images and text makes it potent for image captioning tasks. Training CLIPCap on both a text-image paired dataset and a dataset containing human-generated image captions allows the model to understand relationships between text and images, as well as mimic human-like image descriptions.
 
-Our mainstay, the **CLIPCap** model, combines the strengths of the CLIP model and GPT-2. CLIP, through its pretraining phase, is adept at linking text with corresponding images, positioning it as a strong contender for image captioning chores. By training CLIPCap on a dataset that pairs text with images and another that boasts human-generated captions, the model is exposed to the intricate dynamics of text-image relationships and human descriptive tendencies.
+Training Details:
 
-Training Insights:
-- Our foundational model, VGG16+LSTMs, is shaped by the Flickr8k dataset, ensuring it understands the nexus between image content and natural language portrayals.
-- The advanced CLIPCap model is fine-tuned with the pre-trained CLIP on the same Flickr8k dataset, aligning it perfectly with our image captioning objectives.
-
+The baseline model (VGG16+LSTMs) is trained on the Flickr8k dataset, familiarizing the model with the connections between image content and natural language descriptions.
+For the main CLIPCap model, we fine-tune the pre-trained CLIP model using the same Flickr8k dataset to align with our image captioning objective.
 ### Directory Structure:
 ```
 ├── README.md
