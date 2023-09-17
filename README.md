@@ -43,3 +43,10 @@ For the main CLIPCap model, we fine-tune the pre-trained CLIP model using the sa
 
 
 
+# References:
+VGG16+LSTM (https://github.com/anunay999/image_captioning_vgg16)
+CLIP: Connecting text and Images (https://openai.com/research/clip)
+CLIP_prefix_caption (https://github.com/rmokady/CLIP_prefix_caption)
+Flicker8k Dataset (https://paperswithcode.com/dataset/flickr-8k)
+Fig 3 source: Cross-Domain Image Captioning with Discriminative Finetuning (Roberto Dessì and Michele Bevilacqua and Eleonora Gualdoni, 2023)
+
