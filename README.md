@@ -6,8 +6,10 @@ This repository hosts code, datasets, and models developed for our image caption
 
 # Models Explored:
 
-# Conventional Vision-Language Model (VLM): This model uses VGG16 (a convolutional neural network) to extract image features and an LSTM network to generate word sequences that describe the images.
-# CLIPCap Model: Our primary model that integrates the CLIP (Contrastive Language-Image Pretraining) model with GPT-2 for image captioning. CLIP learns to relate text and images, making it well-suited for captioning tasks. The GPT-2 integration ensures coherent and contextually appropriate captions based on image features detected by CLIP.
+# Conventional Vision-Language Model (VLM): 
+This model uses VGG16 (a convolutional neural network) to extract image features and an LSTM network to generate word sequences that describe the images.
+# CLIPCap Model: 
+Our primary model that integrates the CLIP (Contrastive Language-Image Pretraining) model with GPT-2 for image captioning. CLIP learns to relate text and images, making it well-suited for captioning tasks. The GPT-2 integration ensures coherent and contextually appropriate captions based on image features detected by CLIP.
 Detailed Project Summary:
 Our project aims to develop and assess a deep learning model capable of generating meaningful text descriptions for given images. We explore both conventional architectures and an innovative design that integrates CLIP with GPT-2.
 
